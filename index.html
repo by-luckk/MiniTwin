@@ -6,7 +6,7 @@
         content="Crafting a Miniature Interactive World from a Single Image.">
   <meta name="keywords" content="Image-to-Video, Simulation, Reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>MiniTwin: Crafting a Miniature Interactive World from a Single Image</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -24,7 +24,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
-
+  <link href="./static/css/bootstrap-4.4.1.css" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -91,23 +91,23 @@
           <h1 class="title is-1 publication-title">Crafting a Miniature Interactive World from a Single Image</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Boyuan Chen</a><sup>1</sup>,</span>
+              <a href="https://by-luckk.github.io/MiniTwin.github.io/">Boyuan Chen</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Hanxiao Jiang</a><sup>2,3</sup>,</span>
+              <a href="https://jianghanxiao.github.io/">Hanxiao Jiang</a><sup>2,3</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Shaowei Liu</a><sup>2</sup>,
+              <a href="https://stevenlsw.github.io/">Shaowei Liu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Saurabh Gupta</a><sup>2</sup>,
+              <a href="http://saurabhg.web.illinois.edu/">Saurabh Gupta</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Yunzhu Li</a><sup>3</sup>,
+              <a href="https://yunzhuli.github.io/">Yunzhu Li</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Hao Zhao</a><sup>1</sup>,
+              <a href="https://sites.google.com/view/fromandto">Hao Zhao</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Shenlong Wang</a><sup>2</sup>
+              <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a><sup>2</sup>
             </span>
           </div>
 
@@ -319,11 +319,174 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
+    <h2 class="title is-3">Comparison</h2>
+    <div class="content has-text-justified">
+      <p>
+        In this section, we compare the videos generated from our framework with three state-of-the-art 
+        (SOTA) I2V models: Gen-3, Pika and Kling. We carefully designed the prompt to describe the 
+        motion outcome, and uses motion brush to control Kling. Our framework employs initial velocity 
+        control. 
+        Results show that our method can follow text instructions while maintaining plausible physics.
+      </p>
+    </div>
+    <p>
+      "The dog is deflated and collapses."
+    </p>
+    <br>
+    <div class="columns is-vcentered">
+      <div class="column is-2">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/1/dog.jpg" alt="Input Image">
+            </figure>
+          </div>
+          <div class="card-content py-2 px-2 has-text-centered">
+            <p class="title is-6">Input Image</p>
+          </div>
+        </div>
+      </div>
       <div class="column">
+        <div class="columns is-multiline">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/1/4.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Kling 1.0</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/1/3.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Runway Gen-3</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/1/1.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Pika 1.5</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/1/2.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Ours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      "The book falls and the orange rolls to the front."
+    </p>
+    <br>
+    <div class="columns is-vcentered">
+      <div class="column is-2">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/2/12.jpg" alt="Input Image">
+            </figure>
+          </div>
+          <div class="card-content py-2 px-2 has-text-centered">
+            <p class="title is-6">Input Image</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="columns is-multiline">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/2/3.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Kling 1.0</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/2/2.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Runway Gen-3</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/2/4.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Pika 1.5</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/2/1.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Ours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Visual Effects. -->
+      <!-- <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -335,92 +498,90 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
+    <!-- Dynamics Effects. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3">Dynamics Effects</h2>
+        <p>
+          In this section, we showcase the dynamics effects generated by our framework. 
+          We can generate various dynamics from the same input image by changing the initial velocity or 
+          editing the material. The results indicate our framework's capability to generate consistent 
+          and realistic physical behaviors.
+        </p>
+        <h3 class="title is-4">Material</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            We change the materials of the two objects.
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+        <div class="columns is-vcentered">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="static/videos/3/28.jpg" alt="Input Image">
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Input Image</p>
+              </div>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+          <div class="column">
+            <div class="columns is-multiline">
+              <div class="column is-4">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/3/1.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Rigid & Rigid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/3/2.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Elastic & Rigid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/3/3.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Soft & Soft</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">MiniTwin</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
-    <!--/ Animation. -->
+    <!--/ Dynamics Effects. -->
 
 
     <!-- Concurrent Work. -->
