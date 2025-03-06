@@ -155,3 +155,24 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.pipeline-figure {
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.pipeline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+.pipeline-caption {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
