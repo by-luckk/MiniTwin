@@ -91,7 +91,7 @@
           <h1 class="title is-1 publication-title">Crafting a Miniature Interactive World from a Single Image</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://by-luckk.github.io/MiniTwin.github.io/">Boyuan Chen</a><sup>1</sup>,</span>
+              <a href="https://by-luckk.github.io/MiniTwin/">Boyuan Chen</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://jianghanxiao.github.io/">Hanxiao Jiang</a><sup>2,3</sup>,</span>
             <span class="author-block">
@@ -121,7 +121,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="........."
+                <a href="https://by-luckk.github.io/MiniTwin/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -130,7 +130,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="..........."
+                <a href="https://by-luckk.github.io/MiniTwin/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -138,7 +138,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
+              <!-- Video Link.
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
@@ -147,10 +147,10 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/by-luckk/PhysGen3D.git"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -207,7 +207,7 @@
           </video>
         </div>
         <div class="item item-chair">
-          <video poster="" id="chair" autoplay controls muted loop playsinline height="70%">
+          <video poster="" id="chair" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/chair.mp4"
                     type="video/mp4">
           </video>
@@ -237,7 +237,7 @@
           </video>
         </div>
         <div class="item item-bottle">
-          <video poster="" id="bottle" autoplay controls muted loop playsinline height="70%">
+          <video poster="" id="bottle" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/bottle.mp4"
                     type="video/mp4">
           </video>
@@ -485,22 +485,8 @@
         </div>
       </div>
     </div>
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-      <!--/ Visual Effects. -->
-
+    
+    <br>
     <!-- Dynamics Effects. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -578,7 +564,6 @@
             </div>
           </div>
         </div>
-        <br/>
         <h3 class="title is-4">Motion</h3>
         <div class="content has-text-justified">
           <p>
@@ -649,32 +634,175 @@
     </div>
     <!--/ Dynamics Effects. -->
 
-    <!-- Concurrent Work. -->
+    <br>
+    <!-- Applications. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
+        <h2 class="title is-3">Applications</h2>
+        <p>
+          Our video generation framework, MiniTwin, enables a range of exciting applications through its explicit representation. 
+          Here are just a few of the compelling use cases our system supports:
+        </p>
+        <br>
+        <h3 class="title is-4">Dense 3D Tracking</h3>
+        <div class="columns is-vcentered is-centered">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="static/videos/5/teddy.jpg" alt="Input Image">
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Input Image</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="columns is-multiline">
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/5/1.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Collapse</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/5/2.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Bounce</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="title is-4">Video Editing</h3>
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            We exchange one object between two scenes.
           </p>
+        </div>
+        <div class="columns is-vcentered">
+          <!-- 左侧双图区域 -->
+          <div class="column is-6">
+            <div class="columns is-multiline">
+              <!-- 第一张图片 -->
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <img src="static/videos/6/1.jpg" alt="Image 1">
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Input Image 1</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第二张图片 -->
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <img src="static/videos/6/2.jpg" alt="Image 2">
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Input Image 2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- 右侧双视频区域 -->
+          <div class="column is-6">
+            <div class="columns is-multiline">
+              <!-- 第一个视频 -->
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/6/1.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Video 1</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第二个视频 -->
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <video controls loop autoplay muted>
+                        <source src="static/videos/6/2.mp4" type="video/mp4">
+                      </video>
+                    </figure>
+                  </div>
+                  <div class="card-content py-2 px-2 has-text-centered">
+                    <p class="title is-6">Video2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content has-text-justified">
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            We remove the chair while keeping the toy at initial position.
           </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+        </div>
+        <div class="columns is-vcentered is-centered">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="static/videos/7/7.jpg" alt="Input Image">
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Input Image</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <video controls loop autoplay muted>
+                    <source src="static/videos/7/5.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <div class="card-content py-2 px-2 has-text-centered">
+                <p class="title is-6">Collapse</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+    <!--/ Applications. -->
 
   </div>
 </section>
@@ -683,11 +811,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{chen2025minitwin,
+  author    = {Chen, Boyuan and Jiang, Hanxiao and Liu, Shaowei and Gupta, Saurabh and Li, Yunzhu and Zhao, Hao and Wang, Shenlong},
+  title     = {MiniTwin: Crafting a Miniature Interactive World from a Single Image},
+  journal   = {CVPR},
+  year      = {2025},
 }</code></pre>
   </div>
 </section>
@@ -697,27 +825,19 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="./static/videos/minitwin_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/by-luckk" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column is-8 has-text-centered">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website template is borrowed from <a 
+                                                href="https://github.com/nerfies/nerfies.github.io">Here.
           </p>
         </div>
       </div>
